@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7d17675e7f114149be98d4ed50405199" Name="Diagram1">
+        <EntityTypeShape EntityType="MyProjectModel.Banner" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Brand" Width="1.5" PointX="0.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Category" Width="1.5" PointX="1.5" PointY="33" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.City" Width="1.5" PointX="0.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Comment" Width="1.5" PointX="7.5" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.CommentImagePath" Width="1.5" PointX="9.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.CommentReply" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.CouponDetail" Width="1.5" PointX="10.5" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.CouponDiscountType" Width="1.5" PointX="3" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Coupon" Width="1.5" PointX="5.25" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.DeliveryType" Width="1.5" PointX="5.25" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.DonationDetail" Width="1.5" PointX="10.5" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.FavoriteType" Width="1.5" PointX="8.25" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Foundation" Width="1.5" PointX="8.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.MemberRole" Width="1.5" PointX="3" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Member" Width="1.5" PointX="5.25" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.MyFavorite" Width="1.5" PointX="10.5" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Notify" Width="1.5" PointX="7.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.NotifiesType" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.OrderDetail" Width="1.5" PointX="12.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Order" Width="1.5" PointX="7.5" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.OrderStatu" Width="1.5" PointX="5.25" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.PaymentType" Width="1.5" PointX="5.25" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Pet" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.PetImagePath" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Post" Width="1.5" PointX="13.5" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.PosterImagePath" Width="1.5" PointX="15.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.PostLiked" Width="1.5" PointX="18.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.PostTag" Width="1.5" PointX="15.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.PostType" Width="1.5" PointX="11.25" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.ProductImagePath" Width="1.5" PointX="5.25" PointY="37.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Product" Width="1.5" PointX="3" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.Region" Width="1.5" PointX="3" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.ShoppingCart" Width="1.5" PointX="10.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.SubCategory" Width="1.5" PointX="0.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.sysdiagram" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyProjectModel.TransactionType" Width="1.5" PointX="5.25" PointY="35" IsExpanded="true" />
+        <AssociationConnector Association="MyProjectModel.FK_Products_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_SubCategories_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Region_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Comment_CommentReply" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Comment_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Comment_OrderDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Comment_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_CommentImagePath_Comment" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_CouponDetails_Coupons" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_CouponDetails_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Coupons_CouponDiscountType" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Coupons_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Orders_Coupons" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Orders_DeliveryType1" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_DonationDetails_Foundation" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_DonationDetails_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_DonationDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_DonationDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_MyFavorites_FavoriteType" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Members_MemberRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Members_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_MyFavorites_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Notifies_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Orders_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Post_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_PostLiked_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_ShoppingCart_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_MyFavorites_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Notifies_NotifiesType" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_OrderDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_OrderDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Orders_OrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Orders_PaymentType" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Orders_TransactionType" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Pet_PetImagePath" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_PetImagePath_Pet" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Post_PosterImagePath" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Post_PostType" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_PosterImagePath_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_PostLiked_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_PostTag_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_ProductImagePath_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_Products_SubCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="MyProjectModel.FK_ShoppingCart_Products" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

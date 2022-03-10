@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C583ECFE-73A1-4758-873C-CDC579D723B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_IPET</RootNamespace>
+    <AssemblyName>Project_IPET</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.Front\FrmFrontLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Front\FrmFrontLogin.designer.cs">
+      <DependentUpon>FrmFrontLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1.Front\FrmMemberCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Front\FrmMemberCenter.designer.cs">
+      <DependentUpon>FrmMemberCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1.Front\FrmMemberProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Front\FrmMemberProfile.designer.cs">
+      <DependentUpon>FrmMemberProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1.Front\FrmOrder_Front.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Front\FrmOrder_Front.designer.cs">
+      <DependentUpon>FrmOrder_Front.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1.Front\FrmRegisterMemberShip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Front\FrmRegisterMemberShip.designer.cs">
+      <DependentUpon>FrmRegisterMemberShip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1.Front\FrmShoppingArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Front\FrmShoppingArea.designer.cs">
+      <DependentUpon>FrmShoppingArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1.Front\FrmShoppingHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Front\FrmShoppingHistory.Designer.cs">
+      <DependentUpon>FrmShoppingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1.Front\FrmMemberComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Front\FrmMemberComment.Designer.cs">
+      <DependentUpon>FrmMemberComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1.Front\FrmForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Front\FrmForgetPassword.Designer.cs">
+      <DependentUpon>FrmForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Back\FrmBackCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Back\FrmBackCenter.designer.cs">
+      <DependentUpon>FrmBackCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Back\FrmBackLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Back\FrmBackLogin.designer.cs">
+      <DependentUpon>FrmBackLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Back\FrmCategoriesInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Back\FrmCategoriesInsert.designer.cs">
+      <DependentUpon>FrmCategoriesInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Back\FrmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Back\FrmCategory.designer.cs">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Back\FrmCommentManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Back\FrmCommentManagement.designer.cs">
+      <DependentUpon>FrmCommentManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Back\FrmMemberManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Back\FrmMemberManagement.designer.cs">
+      <DependentUpon>FrmMemberManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Back\FrmOrder_Back.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Back\FrmOrder_Back.designer.cs">
+      <DependentUpon>FrmOrder_Back.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Back\FrmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Back\FrmProduct.designer.cs">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.Back\FrmProductPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.Back\FrmProductPage.designer.cs">
+      <DependentUpon>FrmProductPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3.Class\MemberUtility.cs" />
+    <Compile Include="3.Class\ProductSearchFilter.cs" />
+    <Compile Include="3.Class\ComboboxItem.cs" />
+    <Compile Include="Banner.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Brand.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Comment.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommentImagePath.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommentReply.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Coupon.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CouponDetail.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CouponDiscountType.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryType.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DonationDetail.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FavoriteType.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Foundation.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberRole.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyFavorite.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyProjectModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyProjectModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyProjectModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyProjectModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyProjectModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NotifiesType.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Notify.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetail.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStatu.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentType.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pet.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PetImagePath.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Post.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PosterImagePath.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PostLiked.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PostTag.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PostType.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductImagePath.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubCategory.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionType.cs">
+      <DependentUpon>MyProjectModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="1.Front\FrmFrontLogin.resx">
+      <DependentUpon>FrmFrontLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Front\FrmForgetPassword.resx">
+      <DependentUpon>FrmForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Front\FrmMemberCenter.resx">
+      <DependentUpon>FrmMemberCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Front\FrmMemberComment.resx">
+      <DependentUpon>FrmMemberComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Front\FrmMemberProfile.resx">
+      <DependentUpon>FrmMemberProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Front\FrmOrder_Front.resx">
+      <DependentUpon>FrmOrder_Front.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Front\FrmRegisterMemberShip.resx">
+      <DependentUpon>FrmRegisterMemberShip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Front\FrmShoppingArea.resx">
+      <DependentUpon>FrmShoppingArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1.Front\FrmShoppingHistory.resx">
+      <DependentUpon>FrmShoppingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Back\FrmBackCenter.resx">
+      <DependentUpon>FrmBackCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Back\FrmBackLogin.resx">
+      <DependentUpon>FrmBackLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Back\FrmCategoriesInsert.resx">
+      <DependentUpon>FrmCategoriesInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Back\FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Back\FrmCommentManagement.resx">
+      <DependentUpon>FrmCommentManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Back\FrmMemberManagement.resx">
+      <DependentUpon>FrmMemberManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Back\FrmOrder_Back.resx">
+      <DependentUpon>FrmOrder_Back.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Back\FrmProduct.resx">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.Back\FrmProductPage.resx">
+      <DependentUpon>FrmProductPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="MyProjectModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MyProjectModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="MyProjectModel.edmx.diagram">
+      <DependentUpon>MyProjectModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="4.Picture\NFT 狗.png" />
+    <Content Include="MyProjectModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MyProjectModel.edmx</DependentUpon>
+      <LastGenOutput>MyProjectModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="MyProjectModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MyProjectModel.edmx</DependentUpon>
+      <LastGenOutput>MyProjectModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

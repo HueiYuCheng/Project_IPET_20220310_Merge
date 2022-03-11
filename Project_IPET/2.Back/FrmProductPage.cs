@@ -291,55 +291,6 @@ namespace Project_IPET
             }
         }
 
-        /// <summary>
-        /// 按下編輯button後，會自動帶入產品資訊
-        /// </summary>
-        private void LoadProduct()
-        {
-            try
-            {
-                SqlConnection conn = new SqlConnection(connectionString);
-                conn.Open();
-                SqlCommand command = new SqlCommand("SELECT p.*, sc.CategoryID FROM Products p JOIN SubCategories sc ON p.SubCategoryID = sc.SubCategoryID WHERE p.ProductID = @ProductID", conn);
-                SqlDataReader dataReader = command.ExecuteReader();
-                while (dataReader.Read())
-                {
-                    //自動顯示Categories
-                    for (int i = 0; i < cbxProductCategoryID.Items.Count; i++)
-                    {
-                        if ((int)(cbxProductCategoryID.Items[i] as ComboBoxItem).Value == (int)dataReader["CategoryID"])
-                        {
-                            cbxProductCategoryID.SelectedIndex = i;
-                            break;
-                        }
-                    }
-                    //自動顯示SubCategories
-                    for (int j = 0; j < cbxProductSubCategoryID.Items.Count; j++)
-                    {
-                        if ((int)(cbxProductSubCategoryID.Items[j] as ComboBoxItem).Value == (int)dataReader["SubCategoryID"])
-                        {
-                            cbxProductSubCategoryID.SelectedIndex = j;
-                            break;
-                        }
-                        //自動顯示Brand
-                        for (int k = 0; k < cbxProductBrandName.Items.Count; k++)
-                        {
-                            if ((int)(cbxProductBrandName.Items[k] as ComboBoxItem).Value == (int)dataReader["BrandID"])
-                            {
-                                cbxProductBrandName.SelectedIndex = k;
-                                break;
-                            }
-                        }
-                    }
-                }
-                conn.Close();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("載入商品時錯誤");
-            }
-
-        }
 
         private void cbxProductCategoryID_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -373,19 +324,6 @@ namespace Project_IPET
             }
         }
 
-        private void cbxProductBrandName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void ResetDataGridView()
-        {
-            dgvProductList.CancelEdit();
-            dgvProductList.Columns.Clear();
-            dgvProductList.DataSource = null;
-        }
-
         private void dgvProductList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -403,8 +341,6 @@ namespace Project_IPET
             {
                 MessageBox.Show(ex.Message);
             }
-
-
         }
     }
 }

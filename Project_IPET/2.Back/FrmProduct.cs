@@ -303,12 +303,6 @@ namespace Project_IPET
             cbxProductSubCategoryID.Items.Clear();
             picBoxProductImage.Image = null;
         }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Update()
         {
             //商品售價

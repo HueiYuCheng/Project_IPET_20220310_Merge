@@ -306,7 +306,6 @@ namespace Project_IPET
             this.cbxProductBrandName.Name = "cbxProductBrandName";
             this.cbxProductBrandName.Size = new System.Drawing.Size(212, 33);
             this.cbxProductBrandName.TabIndex = 28;
-            this.cbxProductBrandName.SelectedIndexChanged += new System.EventHandler(this.cbxProductBrandName_SelectedIndexChanged);
             // 
             // txtSearchProduct
             // 

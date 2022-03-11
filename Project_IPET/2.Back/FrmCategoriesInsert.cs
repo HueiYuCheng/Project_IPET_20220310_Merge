@@ -21,33 +21,6 @@ namespace Project_IPET
         {
             InitializeComponent();
         }
-
-        private void LoadCategories()
-        {
-            try
-            {
-                //Show Categories
-                SqlConnection conn = new SqlConnection(connectionString);
-                conn.Open();
-                SqlCommand command = new SqlCommand($"SELECT * FROM Categories", conn);
-                SqlDataReader dataReader = command.ExecuteReader();
-                while (dataReader.Read())
-                {
-                    ComboBoxItem item = new ComboBoxItem();
-                    //編輯時自動顯示該類別的資訊
-                    txtCategories.Text = dataReader["CategoryName"].ToString();
-                    item.Text = dataReader["CategoryName"].ToString();
-                    item.Value = dataReader["CategoryID"];
-                }
-
-                conn.Close();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("載入主分類時錯誤");
-            }
-        }
-
         //Entities
         MyProjectEntities dbContext = new MyProjectEntities();
         private void btnInsertCategories_Click(object sender, EventArgs e)
@@ -81,12 +54,6 @@ namespace Project_IPET
                 MessageBox.Show(ex.Message);
             }
 
-
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnBrowseImage_Click(object sender, EventArgs e)

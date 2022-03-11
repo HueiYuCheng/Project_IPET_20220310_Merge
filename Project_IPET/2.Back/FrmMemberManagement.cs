@@ -206,7 +206,7 @@ namespace Project_IPET._2.Backstage
                     MemoryStream ms = new MemoryStream(bytes);
                     this.picAvatar.Image = Image.FromStream(ms);
                 }
-                catch
+                catch 
                 {
                     this.picAvatar.Image = this.picAvatar.ErrorImage;
                 }
